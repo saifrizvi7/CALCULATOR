@@ -1,11 +1,11 @@
 import unittest
-from calculation import calculation
-#Test cases to test Calulator methods
+from calculation import Calculation
+#Test cases to test Calulation methods
 #You always create  a child class derived from unittest.TestCase
 class test(unittest.TestCase):
   #setUp method is overridden from the parent class TestCase
   def setUp(self):
-    self.Calc = calculation()
+    self.Calc = Calculation()
   #Each test method starts with the keyword test_
   def test_add(self):
     self.assertEqual(self.Calc.addition(4,7), 11)
